@@ -1,0 +1,27 @@
+
+
+<p>signalpadre works!</p>
+<div>{{nombre}}</div>
+<br>
+<div>{{dataUsuario.codiPer}}</div>
+<div>{{dataUsuario.codiUsu}}</div>
+<div>{{dataUsuario.dniPer}}</div>
+<br>
+<p>datos de hijo 1</p>
+<div>{{datosUsurioHijo1_2?.codiPer}}</div>
+<div>{{datosUsurioHijo1_2?.codiUsu}}</div>
+<div>{{datosUsurioHijo1_2?.dniPer}}</div>
+
+<button class="" (click)="modificar()"> cambiar Nombre  usuario</button>
+
+<hr>
+
+<app-signalhijo1  [nombre_input] = nombre  
+                 [dataUsuario_input] =dataUsuario 
+                 [datuarios_input] = usuarios
+                 [inputRequerido] = 30
+                 [inputCurrentDate] = currentDate
+                 inputActivoModel  = activoModel
+               (dataSelect_output)="datosHijo($event)"></app-signalhijo1>
+<hr>
+<app-signalhijo2 [dataUsu_input2]=datosUsurioHijo1_2></app-signalhijo2>
